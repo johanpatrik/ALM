@@ -17,6 +17,12 @@ public class Main {
             String arithmetic = scanner.nextLine();
             if(arithmetic == "*"){
                 System.out.println(first * second);
+            }else if(arithmetic == "/") {
+                System.out.println(first / second);
+            }else if(arithmetic == "+") {
+                System.out.println(first + second);
+            }else if (arithmetic == "-") {
+                System.out.println(first - second);
             }
         }
 
