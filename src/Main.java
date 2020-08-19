@@ -16,7 +16,13 @@ public class Main {
             System.out.println("Välj räknesätt *, /, +, -");
             String arithmetic = scanner.nextLine();
             if(arithmetic == "*"){
-                System.out.println(first * second);
+                System.out.println("first ** second");
+            }
+            if(arithmetic.equals("-")){
+                System.out.println("first - second");
+            }
+            if(arithmetic.equals("/")){
+                System.out.println("first / second");
             }
         }
 
