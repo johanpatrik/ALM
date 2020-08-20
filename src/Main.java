@@ -7,8 +7,6 @@ public class Main {
 
         while(true){
 
-            // grjsiogsrgsriojsgio
-
             System.out.println("Skriv in första talet");
             int first = scanner.nextInt();
 
