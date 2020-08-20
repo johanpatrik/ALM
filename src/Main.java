@@ -7,25 +7,25 @@ public class Main {
 
         while(true){
 
-            // grjsiogsrgsriojsgio
-
             System.out.println("Skriv in första talet");
-            int first = scanner.nextInt();
+            String first = scanner.nextLine();
 
             System.out.println("Skriv in andra talet");
-            int second = scanner.nextInt();
+            String second = scanner.nextLine();
+
+            int firstAsInt = Integer.valueOf(first);
+            int secondAsInt = Integer.valueOf(second);
 
             System.out.println("Välj räknesätt *, /, +, -");
             String arithmetic = scanner.nextLine();
-            if(arithmetic == "*"){
-
-                System.out.println(first * second);
-            }else if(arithmetic == "/") {
-                System.out.println(first / second);
-            }else if(arithmetic == "+") {
-                System.out.println(first + second);
-            }else if (arithmetic == "-") {
-                System.out.println(first - second);
+            if(arithmetic.equals("*")){
+                System.out.println(firstAsInt * secondAsInt);
+            }else if(arithmetic.equals("/")) {
+                System.out.println(firstAsInt / secondAsInt);
+            }else if(arithmetic.equals("+")) {
+                System.out.println(firstAsInt + secondAsInt);
+            }else if (arithmetic.equals("-")) {
+                System.out.println(firstAsInt - secondAsInt);
             }
             System.out.println("fixed conflict");
         }
