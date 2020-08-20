@@ -18,8 +18,7 @@ public class Main {
 
             System.out.println("Välj räknesätt *, /, +, - \t\t\t alt \"Exit\" för att avsluta");
             String arithmetic = scanner.nextLine();
-            if(arithmetic == "*"){
-
+            if(arithmetic.equals("*")){
                 System.out.println(firstAsInt * secondAsInt);
             }else if(arithmetic.equals("/")) {
                 System.out.println(firstAsInt / secondAsInt);
