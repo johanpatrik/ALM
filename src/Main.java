@@ -5,7 +5,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        while(true){
+        calculator: while(true){
 
             System.out.println("Skriv in första talet");
             String first = scanner.nextLine();
@@ -16,7 +16,7 @@ public class Main {
             int firstAsInt = Integer.valueOf(first);
             int secondAsInt = Integer.valueOf(second);
 
-            System.out.println("Välj räknesätt *, /, +, -");
+            System.out.println("Välj räknesätt *, /, +, - \t\t\t alt \"Exit\" för att avsluta");
             String arithmetic = scanner.nextLine();
             if(arithmetic.equals("*")){
                 System.out.println(firstAsInt * secondAsInt);
@@ -26,6 +26,8 @@ public class Main {
                 System.out.println(firstAsInt + secondAsInt);
             }else if (arithmetic.equals("-")) {
                 System.out.println(firstAsInt - secondAsInt);
+            }else if (arithmetic.equals("Exit")){
+                break calculator;
             }
             System.out.println("fixed conflict");
         }
